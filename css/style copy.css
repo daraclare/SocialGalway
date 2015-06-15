@@ -1,4 +1,25 @@
+/*------------------------------------------------------------------
 
+[Overview]
+
+Template Name: Signup
+Version: 0.1
+Author: WordPress Wireframes
+Author URI: http://www.wordpresswireframes.com
+
+Copyright: (c) 2014 WordPress Wireframes.
+License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
+
+[Table of contents]
+
+1. 		Defaults
+2. 		Typography 
+4. 		Forms 
+5. 		Menu
+6. 		Structure and containers
+7. 		Responsive options
+
+-------------------------------------------------------------------*/
 
 /* Defaults ==================================== */
 
@@ -10,7 +31,7 @@
 		height:100%;
 		color: #777; 
 		font-family: 'Open Sans', sans-serif;
-		font-weight: 500;
+		font-weight: 300;
 		padding:0;
 		margin:0;
 		font-size:14px;
@@ -30,21 +51,16 @@
 		font-family: 'Open Sans', sans-serif;
 	}
 	
-	h1 { font-size: 2em; line-height:1.2em; margin:0 0 .8em; text-align: left; }
+	h1 { font-size: 3em; line-height:1.2em; margin:0 0 .8em; }
 	h2 { font-size: 1.8em; line-height:1.4em; margin:0 0 .8em;  }
-	h3 { font-size: 1.4em; line-height:1.4em;  }
-	h4 { font-size: 1.2em; line-height:1.4em; font-weight:500; letter-spacing: .7px; padding-top:.25em; }
+	h3 { font-size: 1.4em; line-height:1.4em; }
+	h4 { font-size: 1.2em; line-height:1.4em; }
 	h5 { font-size: 1.1em; line-height:1.4em; }
 	h6 { font-size: 1em; line-height:1.2em; }
 	
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-		text-decoration: none;
-        color: #226eac;
-	}	
-
-    h4 a:hover{
-        color: #444;
-    }
+		text-decoration: none
+	}	 
 	
 	p { 
 		padding:0 0 1em;
@@ -85,17 +101,15 @@
 	}
 	
 	.clearfix {
-		clear: both;
+		clear: both	
 	} 
 	
 	.clear-sml {
-		display: none;
+		display: none
 	}
 	
 	.align-center {
-		text-align: center;
-        color: #77b054;
-        font-weight:600;
+		text-align: center
 	} 
 	
 	.align-left {
@@ -106,14 +120,10 @@
 		text-align: right
 	}
 
-    .galway-logo {
-        width: 15%;
-        float: left;
-        padding-right: 20px;
-        display: inline;
+    .logo {
+        width: 25%;
     }
 	
-
  /* Forms ==================================== */	
 	
 	.form-box {
@@ -133,17 +143,6 @@
 		text-transform: uppercase;
 		margin:0 0 0
 	}
-
-    form p {
-        display:inline;
-        padding-left: 1em;
-        float:left;
-        margin-right: 1em;
-        margin-left: 2em;
-        text-indent: -1.5em;
-     
-}
-   
 	
 	form a {
 		text-decoration: none
@@ -153,12 +152,9 @@
 		text-decoration: underline
 	}
 	
-
 	.form-row {
 		margin-bottom:1em; 
-	}
-
-
+	} 
 	
 	.form-row input.text, .form-row textarea {
 		width:92%;
@@ -177,8 +173,6 @@
   		box-shadow:         inset 5px 5px 5px  #f3f3f3;
 	}
 	
-
-
 	.form-row select {   
 		width:100%;
 		font-size:1em; 
@@ -218,29 +212,12 @@
 		color:#111; 
 		display: block;	
 		font-weight: 700;
-		text-transform: uppercase;
-        clear: both;
-        padding-top: .5em;
-        padding-bottom: .5em;
+		text-transform: uppercase
 	} 
-  
 	
 	.form-row label span.required { 
 		color:red;
 	}
-
-
-#form-row-name {
-		width:48%;
-        float:left;
-}
-
-#form-row-mobile  {
-        width:48%;
-        float: left;
-        display: inline-block;
-        padding-left:4%
-}
 	
 	.shadow {
 		background: url(../images/shadow.png) no-repeat top center;
@@ -252,8 +229,6 @@
 		color: rgba(255,255,255, 0.5);
 		text-decoration: none	
 	}
-
-  
 	
 	#success, #error { 
 		display: none;
@@ -447,12 +422,11 @@
 	 
 /* Structure and containers ==================================== */
 
-	header {
-		padding:0px;
-        width:auto;
+	section {
+		padding:20px
 	} 
 	
-	.left-side {
+	.left {
 		position: fixed;
 		top:0;
 		left:0;
@@ -465,31 +439,19 @@
   		box-shadow:         0 0 5px 5px rgba(0, 0, 0, 0.08);		
 	}
 
-	.left-side header {
-		text-align: left;
-		width:90%;
+	.left section {
+		text-align: center;
+		width:60%;
 		margin: 0 auto;
   		display: block;
         margin: 20px;
 	}
 
-	.left-side header h1 {
+	.left section h1 {
 		font-weight:700;
 		text-transform: uppercase;
-		margin:0;
-        padding-top: 1em;
+		margin:0 0 20px
 	}
-
-
-    .left-side header h4 {
-        clear: none;
-        display: inline;
-        float: left;
-	}
-    .left-side article {
-        clear: both;
-        padding: 20px;
-    }
 		
 	.right {
 		float: right;
@@ -561,12 +523,12 @@
 	
 	@media screen and (max-width: 50em) { 
 	
-		.left-side, .right {
+		.left, .right {
 			width:100%;
 			position: relative
 		}
 	
-		.left-side section {
+		.left section {
 			text-align: center;
 			width:80%
 		}
