@@ -1,0 +1,16 @@
+Email: info@saferdiscosandsocialsingalway.com
+Password: Sd&siG100
+
+Setting up my email account in Outlook
+https://help.blacknight.com/entries/31693762-Setting-up-shared-email-account-in-Outlook
+
+How do i setup my email on iPhone
+https://help.blacknight.com/entries/32966432-How-do-i-setup-Shared-Hosting-Email-on-iPhone
+
+
+
+Incoming mail server box: mail.blacknight.com
+Outgoing mail server (SMTP) box: mail.blacknight.com
+
+
+

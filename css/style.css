@@ -3,11 +3,12 @@
 /* Defaults ==================================== */
 
 	html {
-		height:100%	
+		height:100%;
+        min-height: 100vh;
 	}
 
 	body {
-		height:100%;
+		min-height:100vh;
 		color: #777; 
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 500;
@@ -17,7 +18,6 @@
 		line-height:1.6em;
 		background: #1778a9 url(../images/background_0.jpg) fixed center center;	
 		background-size: 100% 100%;
-		height:100%;
 	}
 	
 /* Typography ==================================== */
@@ -107,9 +107,8 @@
 	}
 
     .galway-logo {
-        width: 15%;
+        width: 150px;
         float: left;
-        padding-right: 20px;
         display: inline;
     }
 	
@@ -131,7 +130,15 @@
 	form h2 {
 		font-weight:700;
 		text-transform: uppercase;
-		margin:0 0 0
+		margin:0 0 0;
+	}
+
+form h6 {
+		font-weight:300;
+		text-transform: lowercase;
+        font-size: 1em;
+		margin:0 0 0;
+        display: inline;
 	}
 
     form p {
@@ -453,16 +460,16 @@
 	} 
 	
 	.left-side {
-		position: fixed;
 		top:0;
 		left:0;
 		bottom:0;
 		float: left;
 		width:50%;
-		background:#fff;	
+		background:#fff;
+        min-height: 100vh;
   		-moz-box-shadow:    0 0 5px 5px rgba(0, 0, 0, 0.08);
   		-webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.08);
-  		box-shadow:         0 0 5px 5px rgba(0, 0, 0, 0.08);		
+  		box-shadow:         0 0 5px 5px rgba(0, 0, 0, 0.08);
 	}
 
 	.left-side header {
@@ -485,6 +492,7 @@
         clear: none;
         display: inline;
         float: left;
+        font-size: 1.4em;
 	}
     .left-side article {
         clear: both;
@@ -560,6 +568,10 @@
 /* Responsive options  ==================================== */
 	
 	@media screen and (max-width: 50em) { 
+        
+        .galway-logo {
+        width: 100px;
+    }
 	
 		.left-side, .right {
 			width:100%;
@@ -571,6 +583,15 @@
 			width:80%
 		}
 	
+        .left-side header h1 {
+            clear: both;
+            padding-top: 0;
+        }
+        
+        h4 {
+            max-width:35%;
+        }
+
 		.right .narrow { 
 			width:100%
 		}
@@ -587,6 +608,28 @@
 			clear: both;
 			display: block
 		}
+        
+        
+        .form-row input.text, .form-row textarea {
+            
+        }
+        #form-row-name {
+            width: 100%;
+            clear:both;
+        }
+        #form-row-mobile {
+            width: 100%;
+            clear:both;
+            padding-left:0;
+        }
+        
+        form p {
+            display: inline;
+            padding-left: 1em;
+            float: left;
+            margin-left: .4em;
+            text-indent: -1.5em;
+        }
 	}
 	 
 	 

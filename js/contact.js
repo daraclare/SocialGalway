@@ -11,6 +11,10 @@ $(function() {
             email: {
                 required: true,
                 email: true
+            },
+            phone: {
+                required: true,
+                minlength: 6
             }
         },
         messages: {
@@ -20,6 +24,9 @@ $(function() {
             },
             email: {
                 required: "Please enter your email address"
+            },
+            phone: {
+                required: "Please enter your phone number"
             }
         },
         submitHandler: function(form) {
@@ -54,6 +61,10 @@ $(function() {
             email: {
                 required: true,
                 email: true
+            },
+            phone: {
+                required: true,
+                minlength: 6
             }
         },
         messages: {
@@ -63,6 +74,10 @@ $(function() {
             },
             email: {
                 required: "Please enter your email address"
+            },
+             phone: {
+                required: "Please enter your phone number",
+                minlength: "Your name must consist of at least 6 characters"
             }
         },
         submitHandler: function(form) {

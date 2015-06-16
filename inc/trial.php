@@ -26,7 +26,7 @@
     $fields{"involvement-option4"} = "Involvement Option 4";
     $fields{"message"} = "Comments";
 
-    $body = "Details:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
+    $body = "REGISTRATION FORM:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
 
     $send = mail($to, $subject, $body, $headers);
 
