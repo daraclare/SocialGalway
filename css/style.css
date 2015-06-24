@@ -73,11 +73,13 @@
  		background-image: -webkit-linear-gradient(top, #53c5e1, #3aa2cb);
  		background-image: -moz-linear-gradient(top, #53c5e1, #3aa2cb);
  		background-image: -ms-linear-gradient(top, #53c5e1, #3aa2cb);
- 		background-image: -o-linear-gradient(top, #53c5e1, #3aa2cb); 
+ 		background-image: -o-linear-gradient(top, #53c5e1, #3aa2cb);
+        -webkit-appearance: none;
 	}
 	
 	a.btn:hover {
-		background:#168cce;	
+		background:#168cce;
+        -webkit-appearance: none;
 	}
 	
 	img {
@@ -207,17 +209,20 @@ form h6 {
  		background-image: -webkit-linear-gradient(top, #53c5e1, #3aa2cb);
  		background-image: -moz-linear-gradient(top, #53c5e1, #3aa2cb);
  		background-image: -ms-linear-gradient(top, #53c5e1, #3aa2cb);
- 		background-image: -o-linear-gradient(top, #53c5e1, #3aa2cb); 
+ 		background-image: -o-linear-gradient(top, #53c5e1, #3aa2cb);
+        -webkit-appearance: none;
 	}
 	
 	.form-row input.btn:hover, .form-row input.btn:focus {
 		background:#3aa2cb;
+        -webkit-appearance: none;
 	}
 	
 	.form-row input.btn-wide {
 		width:100%;
 		padding-left:0;
-		padding-right:0;	
+		padding-right:0;
+        -webkit-appearance: none;
 	}
 	
 	.form-row label { 
@@ -361,7 +366,8 @@ form h6 {
 		-moz-border-radius-topleft: 0; 
 		-moz-border-radius-bottomleft: 0;
 		border-top-left-radius: 0; 
-		border-bottom-left-radius: 0;		
+		border-bottom-left-radius: 0;
+        -webkit-appearance: none;
 	}
 
 /* Menu  ==================================== */
@@ -538,9 +544,9 @@ form h6 {
 		color:#fff;
 		font-weight:400;
 		text-transform: uppercase;
-		font-size:2em;
 		margin:0;
 		padding:0;
+        padding-top: 1em;
 	}
 
 	.right .title h1 {

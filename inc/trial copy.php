@@ -27,9 +27,7 @@
     $fields{"message"} = "Comments";
 
     $body = "REGISTRATION FORM:\n\n";
-    foreach($fields as $a => $b){   $body .= sprintf("%s: %s\n",$b,$_REQUEST[$a]); }
-
-
+    foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
 
     $send = mail($to, $subject, $body, $headers);
 

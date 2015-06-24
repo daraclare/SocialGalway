@@ -77,7 +77,7 @@ $(function() {
             },
              phone: {
                 required: "Please enter your phone number",
-                minlength: "Your name must consist of at least 6 characters"
+                minlength: "Your mobile number must consist of at least 6 characters"
             }
         },
         submitHandler: function(form) {
